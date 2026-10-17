@@ -1,4 +1,4 @@
-# PreservesPitch
+# PreservesPitch for Youtube
 Tính năng **`preservesPitch = false`** trên thẻ `<video>` của HTML5 dùng để điều khiển cách âm thanh thay đổi khi bạn chỉnh tốc độ phát (`playbackRate`).
 
 * **Khi để mặc định (`true`):** YouTube sẽ tự động giữ nguyên cao độ giọng nói/âm nhạc dù bạn có chỉnh tốc độ phát lên 1.5x hay 2x (tránh tình trạng giọng bị bóp méo thành giọng sóc chuột).
