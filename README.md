@@ -19,7 +19,7 @@ if (video) {
     video.preservesPitch = false;
     video.mozPreservesPitch = false;    // Cho một số trình duyệt cũ / Firefox
     video.webkitPreservesPitch = false; // Cho Safari / Chrome cũ
-    console.log("Đã tắt preservesPitch thành công!");
+    console.log("disable preservesPitch successfully!");
 }
 
 ```
@@ -27,3 +27,24 @@ if (video) {
 4. Sau đó, mỗi khi bạn thay đổi tốc độ phát trên YouTube (ví dụ chỉnh lên `1.25x` hoặc `1.5x`), âm thanh sẽ thay đổi cả về độ cao lẫn tốc độ.
 
 *Lưu ý:* Mỗi khi chuyển sang video khác hoặc tải lại trang (F5), thẻ video sẽ được tạo mới và bạn sẽ cần chạy lại đoạn mã trên hoặc cài các tiện ích mở rộng (Userscript như Tampermonkey) để tự động hóa việc này nếu muốn dùng thường xuyên.
+
+Demo tampermonkey... 
+```javascript
+// ==UserScript==
+// @name         YouTube Speedup/Slowed (Disable preservesPitch)
+// @match        *://www.youtube.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    // Kiểm tra liên tục để giữ hiệu lực khi YouTube tự động chuyển bài (vì YouTube load trang kiểu không tải lại toàn bộ)
+    setInterval(() => {
+        const video = document.querySelector('video');
+        if (video && video.preservesPitch !== false) {
+            video.preservesPitch = false;
+        }
+    }, 1000);
+})();
+
+```
