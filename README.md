@@ -10,7 +10,8 @@ Nếu bạn muốn trải nghiệm hiệu ứng này trên một video YouTube b
 
 1. Mở video YouTube cần xem trên trình duyệt máy tính.
 2. Nhấn phím `F12` (hoặc chuột phải chọn **Inspect / Kiểm tra**) rồi chuyển sang tab **Console**.
-3. Dán đoạn mã sau vào và nhấn `Enter`: (nếu console không cho paste thì ghi 'allow pasting' trước khi dán)
+3. Dán đoạn mã sau vào và nhấn `Enter`:
+4. LƯU Ý: nếu console không cho paste thì ghi `allow pasting` trước khi paste
 
 ```javascript
 const video = document.querySelector('video');
