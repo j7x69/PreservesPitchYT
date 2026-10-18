@@ -28,23 +28,4 @@ if (video) {
 
 *Lưu ý:* Mỗi khi chuyển sang video khác hoặc tải lại trang (F5), thẻ video sẽ được tạo mới và bạn sẽ cần chạy lại đoạn mã trên hoặc cài các tiện ích mở rộng (Userscript như Tampermonkey) để tự động hóa việc này nếu muốn dùng thường xuyên.
 
-Demo tampermonkey... 
-```javascript
-// ==UserScript==
-// @name         YouTube Speedup/Slowed (Disable preservesPitch)
-// @match        *://www.youtube.com/*
-// @grant        none
-// ==/UserScript==
-
-(function() {
-    'use strict';
-    // Kiểm tra liên tục để giữ hiệu lực khi YouTube tự động chuyển bài (vì YouTube load trang kiểu không tải lại toàn bộ)
-    setInterval(() => {
-        const video = document.querySelector('video');
-        if (video && video.preservesPitch !== false) {
-            video.preservesPitch = false;
-        }
-    }, 1000);
-})();
-
-```
+## đã có bản extension.. không cần copy vào console nữa!
