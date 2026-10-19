@@ -29,3 +29,4 @@ if (video) {
 *Lưu ý:* Mỗi khi chuyển sang video khác hoặc tải lại trang (F5), thẻ video sẽ được tạo mới và bạn sẽ cần chạy lại đoạn mã trên hoặc cài các tiện ích mở rộng (Userscript như Tampermonkey) để tự động hóa việc này nếu muốn dùng thường xuyên.
 
 ## đã có bản extension.. không cần copy vào console nữa!
+# https://chromewebstore.google.com/detail/preservespitch-yt/lfkbicpjobfdknmmaggfammfnieigpji?authuser=0&hl=en-GB
